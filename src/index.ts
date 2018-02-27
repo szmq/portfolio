@@ -1,21 +1,30 @@
 import Vue from "vue";
-import HelloComponent from "./components/Hello.vue";
-import HelloDecoratorComponent from "./components/HelloDecorator.vue";
+import VueRouter from 'vue-router';
+import Loader from "./components/loader/loaderComponent.vue";
+import AboutMe from "./components/about-me/AboutMeComponent.vue";
+import Navigation from "./components/navigation/navigationComponent.vue";
+import Projects from "./components/projects/projectsComponent.vue";
 
-let v = new Vue({
+Vue.use(VueRouter);
+
+const routes = [
+    { path: '/', component: AboutMe },
+    { path: '/projects', component: Projects }
+]
+
+const router = new VueRouter({
+    routes
+})
+
+let app = new Vue({
     el: "#app",
-    template: `
-    <div>
-        Name: <input v-model="name" type="text">
-        <h1>Hello Component</h1>
-        <hello-component :name="name" :initialEnthusiasm="5" />
-        <h1>Hello Decorator Component</h1>
-        <hello-decorator-component :name="name" :initialEnthusiasm="5" />
-        </div>
-    `,
+    router,
     data: { name: "World" },
     components: {
-        HelloComponent,
-        HelloDecoratorComponent
+        Loader,
+        AboutMe,
+        Navigation,
+        Projects,
     }
 });
+

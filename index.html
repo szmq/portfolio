@@ -1,10 +1,78 @@
 <!doctype html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SR Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<style lang="scss">
+    @import url('https://fonts.googleapis.com/css?family=Cormorant+Infant:300,300i,400,400i,500,500i,600,600i,700&subset=latin-ext');
+
+    [v-cloak] { display:none; }
+
+    body {
+        font-family: 'Cormorant Infant', serif;
+        background-color: #f1c40f;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .aside-content {
+        margin-left: 20px;
+    }
+
+    .app-container {
+        display: flex;
+        max-width: 1366px;
+        margin: 0 auto;
+        padding: 20px
+    }
+
+    .main-content {
+        width: 80%;
+        text-align: center;
+        flex-shrink: 1;
+    }
+
+    .footer {
+        margin-top: 20px;
+    }
+
+    .footer p, .footer a {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .footer a {
+        color: #000;
+    }
+</style>
 
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <loader></loader>
+        
+        <div class="app-container" v-cloak>
+            <div class="main-content">
+                <router-view></router-view>
+            </div>
+            <aside class="aside-content">
+                <a class="logo" href="#">
+                    <img class="logo__image" src="./dist/assets/logo.png" alt="Logo">
+                </a>
+                <navigation></navigation>
+                <footer class="footer">
+                    <p>Made by Szymon Ryczek<p>
+                    <a href='http://dryicons.com/'>Contact icons by Dryicons</a>
+                </footer>
+            </aside>
+        </div>
+    </div>
 </body>
 
 <script src="./dist/build.js"></script>
-
 </html>

@@ -55,6 +55,11 @@ module.exports = {
   performance: {
     hints: false
   },
+  devServer: {
+    inline: true,
+    port: 3000,
+    hot: true
+  },
   devtool: '#eval-source-map'
 }
 
