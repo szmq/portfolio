@@ -56,20 +56,22 @@
     <div id="app">
         <loader></loader>
         
-        <div class="app-container" v-cloak>
-            <div class="main-content">
-                <router-view></router-view>
+        <div v-cloak>
+            <div class="app-container">
+                <div class="main-content">
+                    <router-view></router-view>
+                </div>
+                <aside class="aside-content">
+                    <a class="logo" href="#">
+                        <img class="logo__image" src="./dist/assets/logo.png" alt="Logo">
+                    </a>
+                    <navigation></navigation>
+                    <footer class="footer">
+                        <p>Made by Szymon Ryczek<p>
+                        <a href='http://dryicons.com/'>Contact icons by Dryicons</a>
+                    </footer>
+                </aside>
             </div>
-            <aside class="aside-content">
-                <a class="logo" href="#">
-                    <img class="logo__image" src="./dist/assets/logo.png" alt="Logo">
-                </a>
-                <navigation></navigation>
-                <footer class="footer">
-                    <p>Made by Szymon Ryczek<p>
-                    <a href='http://dryicons.com/'>Contact icons by Dryicons</a>
-                </footer>
-            </aside>
         </div>
     </div>
 </body>
