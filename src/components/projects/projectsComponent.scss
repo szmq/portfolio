@@ -1,3 +1,4 @@
+
 .my-info {
     &__heading {
         margin: 0;
@@ -7,6 +8,19 @@
     &__desc {
         margin: 40px 0;
         font-size: 20px;
+    }
+
+    .grid-item {
+        width: calc(100% / 2 - 30px);
+        margin-bottom: 30px;
+
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+    
+        img {
+            width: 100%;
+        }
     }
 }
 

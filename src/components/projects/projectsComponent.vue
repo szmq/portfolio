@@ -34,7 +34,7 @@ export default class Projects extends Vue {
     }
 
     mounted () {
-        const imgPromises = [...Array.from(document.images)]
+        const imgPromises = Array.from(document.images)
             .filter(img => !img.complete)
             .map(img => new Promise(resolve => img.onload = resolve))
 
@@ -59,7 +59,6 @@ export default class Projects extends Vue {
         });
 
         var msnry = new Masonry( elem, {
-            gutter: 40,
         });
     }
 }
