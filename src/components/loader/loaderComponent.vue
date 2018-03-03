@@ -14,14 +14,21 @@ export default class Loader extends Vue {
     mounted() {
         setTimeout(() => {
             this.$refs.loader.classList.remove('loader--active');
-            this.$refs.loader.addEventListener("transitionend", (e) => {
-                const loader = e.currentTarget as HTMLElement;
-
-                if (loader) {
-                    loader.classList.add('loader--hide');
-                }
-            }, false);
         }, 3000)
+
+        this.$refs.loader.addEventListener("transitionend", detectTheEnd, false);
+        this.$refs.loader.addEventListener("webkitTransitionEnd", detectTheEnd, false);
+        this.$refs.loader.addEventListener("mozTransitionEnd", detectTheEnd, false);
+        this.$refs.loader.addEventListener("msTransitionEnd", detectTheEnd, false);
+        this.$refs.loader.addEventListener("oTransitionEnd", detectTheEnd, false);
+
+        function detectTheEnd(e: any) {
+            const loader = e.currentTarget as HTMLElement;
+
+            if (loader && e.propertyName == "visibility") {
+                loader.classList.add('loader--hide');
+            }
+        }
     }
 }
 </script>
