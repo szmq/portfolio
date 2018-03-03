@@ -20,17 +20,40 @@ export default class Projects extends Vue {
     };
     
     Update () {
-        this.MasonryInit();
+        // window.onload = () => {
+        //     this.MasonryInit();
+        // }
+        // if (document.readyState === "complete") {
+        //     this.MasonryInit();
+        // } else {
+            // window.onload = () => {
+            //     this.MasonryInit();
+            // }
+        // }
+        // debugger;
     }
 
-    created () {
-        window.onload = () => {
+    mounted () {
+        const imgPromises = [...Array.from(document.images)]
+            .filter(img => !img.complete)
+            .map(img => new Promise(resolve => img.onload = resolve))
+
+        Promise.all(imgPromises).then(() => {
             this.MasonryInit();
-        }
+        })
+
+        // const imgPromises = []
+        //     .every.call(document.images, (img: HTMLImageElement) => img.complete)
+        //     .map((img: HTMLImageElement) => new Promise(resolve => img.onload = resolve))
+
+        // Promise.all(imgPromises).then(() => {
+        //     console.log('loaded!')
+        // })
     }
 
     MasonryInit () {
         var elem = <HTMLElement> document.querySelector('.grid');
+
         var msnry = new Masonry( elem, {
             itemSelector: '.grid-item',
         });

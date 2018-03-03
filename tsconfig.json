@@ -6,8 +6,16 @@
         "module": "es2015",
         "moduleResolution": "node",
         "target": "es5",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "es2015",
+            "es2015.promise",
+            "es2015.iterable",
+            "es2015.core"
+        ],
         "experimentalDecorators": true,
-        "strictPropertyInitialization": false
+        "strictPropertyInitialization": false,
     },
     "include": [
         "./src/**/*"
