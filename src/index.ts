@@ -24,7 +24,7 @@ let app = new Vue({
         Loader,
         AboutMe,
         Navigation,
-        Projects,
+        Projects
     }
 });
 

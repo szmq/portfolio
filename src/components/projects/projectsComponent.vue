@@ -1,18 +1,81 @@
 <template src="./projectsComponent.html"></template>
 
-<script lang="ts" defer>
+<script lang="ts">
 /// <reference path="./../../../node_modules/vue-router/types/vue.d.ts" />
-import { Vue, Component, Prop } from "vue-property-decorator";
+import { Vue, Component, Prop, Inject, Provide } from "vue-property-decorator";
 import * as Masonry from 'masonry-layout';
+// import ProjectSlide from './../project-slide/projectSlideComponent.vue';
+import ProjectSlide from "./../project-slide/ProjectSlideComponent.vue";
 
-Component.registerHooks([
-  'beforeRouteEnter',
-  'beforeRouteLeave',
-  'beforeRouteUpdate' // for vue-router 2.2+
-]);
-
-@Component
+@Component({
+    components: {
+        ProjectSlide
+    }
+})
 export default class Projects extends Vue {
+    Projects = [
+        {
+            'name': 'project1', 
+            'description': 'project1 desc',
+            'downloadUrl': '#',
+            'speed': '3700',
+            'slides': [
+                'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
+                'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
+            ]
+        },
+        {
+            'name': 'project2', 
+            'description': 'project2 desc',
+            'downloadUrl': '#',
+            'speed': '2800',
+            'slides': [
+                'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
+                'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
+            ]
+        },
+        {
+            'name': 'project3', 
+            'description': 'project3 desc',
+            'downloadUrl': '#',
+            'speed': '3200',
+            'slides': [
+                'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
+                'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
+            ]
+        },
+        {
+            'name': 'project4', 
+            'description': 'project1 desc',
+            'downloadUrl': '#',
+            'speed': '3300',
+            'slides': [
+                'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
+                'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
+            ]
+        },
+        {
+            'name': 'project5', 
+            'description': 'project2 desc',
+            'downloadUrl': '#',
+            'speed': '2900',
+            'slides': [
+                'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
+                'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
+            ]
+        },
+        {
+            'name': 'project6', 
+            'description': 'project3 desc',
+            'downloadUrl': '#',
+            'speed': '3500',
+            'slides': [
+                'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
+                'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
+            ]
+        },
+    ];
+
     beforeRouteEnter(to: any, from: any, next: any) {
         next((_this: Projects) => {
             _this.Update();
