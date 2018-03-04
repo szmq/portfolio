@@ -9,6 +9,7 @@ interface ProjectVM {
     description: string;
     downloadUrl: string;
     speed: number;
+    height: number;
     slides: Array<String>;
 }
 
@@ -40,6 +41,10 @@ export default class ProjectSlide extends Vue {
 
     get SlideUrl () {
         return this.Project.slides[this.CurrentSlide];
+    }
+
+    get SlideHeight () {
+        return this.Project.height + 'px';
     }
 }
 </script>

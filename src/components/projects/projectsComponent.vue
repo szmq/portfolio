@@ -19,6 +19,7 @@ export default class Projects extends Vue {
             'description': 'project1 desc',
             'downloadUrl': '#',
             'speed': '3700',
+            'height': '400',
             'slides': [
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
@@ -29,6 +30,7 @@ export default class Projects extends Vue {
             'description': 'project2 desc',
             'downloadUrl': '#',
             'speed': '2800',
+            'height': '450',
             'slides': [
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
@@ -39,6 +41,7 @@ export default class Projects extends Vue {
             'description': 'project3 desc',
             'downloadUrl': '#',
             'speed': '3200',
+            'height': '410',
             'slides': [
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
@@ -49,6 +52,7 @@ export default class Projects extends Vue {
             'description': 'project1 desc',
             'downloadUrl': '#',
             'speed': '3300',
+            'height': '430',
             'slides': [
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
@@ -59,6 +63,7 @@ export default class Projects extends Vue {
             'description': 'project2 desc',
             'downloadUrl': '#',
             'speed': '2900',
+            'height': '530',
             'slides': [
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
@@ -69,6 +74,7 @@ export default class Projects extends Vue {
             'description': 'project3 desc',
             'downloadUrl': '#',
             'speed': '3500',
+            'height': '540',
             'slides': [
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
