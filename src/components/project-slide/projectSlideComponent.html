@@ -1,3 +1,9 @@
-<div>
+<div class="project-slide">
     <img :src="SlideUrl" :style="{height: SlideHeight}" alt="project image">
+
+    <div class="project-slide__inner">
+        <h3 class="project-slide__name">{{ Project.name }}</h3>
+        <p class="project-slide__desc">{{ Project.description }}</p>
+        <a class="project-slide__url" :href="Project.downloadUrl">Demo</a>
+    </div>
 </div>

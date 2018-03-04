@@ -63,7 +63,7 @@ export default class Projects extends Vue {
             'description': 'project2 desc',
             'downloadUrl': '#',
             'speed': '2900',
-            'height': '530',
+            'height': '460',
             'slides': [
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
@@ -74,7 +74,7 @@ export default class Projects extends Vue {
             'description': 'project3 desc',
             'downloadUrl': '#',
             'speed': '3500',
-            'height': '540',
+            'height': '500',
             'slides': [
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
