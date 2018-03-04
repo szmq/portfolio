@@ -11,11 +11,11 @@
     }
 
     .grid-item {
-        width: calc(100% / 2 - 30px);
-        margin-bottom: 30px;
+        width: calc(100% / 3 - 20px);
+        margin-bottom: 20px;
 
         &:nth-child(odd) {
-            margin-right: 30px;
+            margin-right: 20px;
         }
     
         img {
