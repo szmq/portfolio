@@ -14,7 +14,7 @@ export default class Loader extends Vue {
     mounted() {
         setTimeout(() => {
             this.$refs.loader.classList.remove('loader--active');
-        }, 3000)
+        }, 1500)
 
         this.$refs.loader.addEventListener("transitionend", detectTheEnd, false);
         this.$refs.loader.addEventListener("webkitTransitionEnd", detectTheEnd, false);

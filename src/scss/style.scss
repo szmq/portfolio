@@ -1,0 +1,52 @@
+.contact {
+    margin-top: 40px;
+    
+    &__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    &__list-icon {
+        width: 100%;
+        height: auto;
+    }
+
+    &__list-element {
+        margin-right: 10px;
+        width: calc(100% / 5);
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__list-link {
+        text-decoration: none;
+        font-family: 'Cormorant Infant', serif;
+        text-decoration: none;
+        line-height: 50px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 50px;
+        color: #000;
+
+        &:hover {
+            color: #000000;
+            font-style: italic;
+            font-weight: 900px;
+        }
+    }
+
+    &__email-heading {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    &__email-link {
+        color: #000;
+        font-size: 20px;
+    }
+}

@@ -10,8 +10,61 @@
 
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css?family=Cormorant+Infant:300,300i,400,400i,500,500i,600,600i,700&subset=latin-ext');
+    @import url('https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff&subset=latin-ext');
 
     [v-cloak] { display:none; }
+    
+    .logo {
+        font-family: 'Herr Von Muellerhoff', cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 60px;
+        text-decoration: none;
+        color: #000;
+    }
+    .contact {
+        margin-top: 40px;
+    }
+    .contact__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+    }
+    .contact__list-icon {
+        width: 50px;
+        height: auto;
+    }
+    .contact__list-element {
+        margin-right: 10px;
+    }
+    .contact__list-element:first-child {
+        margin-left: 0;
+    }
+    .contact__list-link {
+        text-decoration: none;
+        font-family: 'Cormorant Infant', serif;
+        text-decoration: none;
+        line-height: 50px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 50px;
+        color: #000;
+    }
+    .contact__list-link:hover {
+        color: #000000;
+        font-style: italic;
+        font-weight: 900px;
+    }
+    .contact__email-heading {
+        margin: 0;
+        font-size: 30px;
+    }
+    .contact__email-link {
+        color: #000;
+        font-size: 20px;
+    }
 
     body {
         font-family: 'Cormorant Infant', serif;
@@ -21,25 +74,25 @@
         padding: 0;
     }
 
-    .aside-content {
-        margin-left: 20px;
-    }
-
     .app-container {
         display: flex;
         max-width: 1366px;
         margin: 0 auto;
-        padding: 20px
+        padding: 2vh 5vw;
+        justify-content: space-between;
     }
 
     .main-content {
-        width: 80%;
+        flex-basis: 70%;
         text-align: center;
-        flex-shrink: 1;
+    }
+
+    .aside-content {
+        margin-right: 20px;
     }
 
     .footer {
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .footer p, .footer a {
@@ -58,19 +111,40 @@
         
         <div v-cloak>
             <div class="app-container">
-                <div class="main-content">
-                    <router-view></router-view>
-                </div>
                 <aside class="aside-content">
                     <router-link class="logo" to="/">
-                        <img class="logo__image" src="./dist/assets/logo.png" alt="Logo">
+                        Szymon Ryczek
                     </router-link>
                     <navigation></navigation>
+                    <section class="contact">
+                        <ul class="contact__list">
+                            <li class="contact__list-element">
+                                <a class="contact__list-link" href="#">
+                                    <img class="contact__list-icon" src="dist/assets/facebook.svg" alt="my-facebook">
+                                </a>
+                            </li>
+                            <li class="contact__list-element">
+                                <a class="contact__list-link" href="#">
+                                    <img class="contact__list-icon" src="dist/assets/linkedin.svg" alt="my-linkedin">
+                                </a>
+                            </li>
+                            <li class="contact__list-element">
+                                <a class="contact__list-link" href="#">
+                                    <img class="contact__list-icon" src="dist/assets/github.svg" alt="my-github">
+                                </a>
+                            </li>
+                        </ul>
+                        <h3 class="contact__email-heading">Email</h3>
+                        <a class="contact__email-link" href="mailto:szymon.ryczek97@gmail.com">szymon.ryczek97@gmail.com</a>
+                    </section>
                     <footer class="footer">
                         <p>Made by Szymon Ryczek<p>
                         <a href='http://dryicons.com/'>Contact icons by Dryicons</a>
                     </footer>
                 </aside>
+                <div class="main-content">
+                    <router-view></router-view>
+                </div>
             </div>
         </div>
     </div>

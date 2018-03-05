@@ -19,7 +19,7 @@ export default class Projects extends Vue {
             'description': 'project1 desc',
             'downloadUrl': '#',
             'speed': '6700',
-            'height': '400',
+            'height': '600',
             'slides': [
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
@@ -30,7 +30,7 @@ export default class Projects extends Vue {
             'description': 'project2 desc',
             'downloadUrl': '#',
             'speed': '4800',
-            'height': '450',
+            'height': '650',
             'slides': [
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
@@ -41,7 +41,7 @@ export default class Projects extends Vue {
             'description': 'project3 desc',
             'downloadUrl': '#',
             'speed': '8200',
-            'height': '410',
+            'height': '610',
             'slides': [
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
@@ -52,7 +52,7 @@ export default class Projects extends Vue {
             'description': 'project1 desc',
             'downloadUrl': '#',
             'speed': '6300',
-            'height': '430',
+            'height': '630',
             'slides': [
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
@@ -63,7 +63,7 @@ export default class Projects extends Vue {
             'description': 'project2 desc',
             'downloadUrl': '#',
             'speed': '8900',
-            'height': '460',
+            'height': '660',
             'slides': [
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
@@ -74,7 +74,7 @@ export default class Projects extends Vue {
             'description': 'project3 desc',
             'downloadUrl': '#',
             'speed': '6000',
-            'height': '500',
+            'height': '700',
             'slides': [
                 'http://cloud.screenpresso.com/pvTvc/2018-03-03_23h15_00.png',
                 'http://cloud.screenpresso.com/DpaR/2018-03-03_23h17_23.png',

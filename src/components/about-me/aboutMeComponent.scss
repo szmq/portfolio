@@ -2,60 +2,12 @@
     &__heading {
         margin: 0;
         font-size: 60px;
+        font-family: 'Herr Von Muellerhoff', cursive;
     }
 
     &__desc {
         margin: 40px 0;
         font-size: 22px;
-    }
-}
-
-.contact {
-    &__heading {
-        margin: 0;
-        font-size: 40px
-    }
-
-    &__list {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    &__list-icon {
-        height: 150px;
-        width: 150px;
-    }
-
-    &__list-element {
-        margin: 20px;
-    }
-
-    &__list-link {
-        text-decoration: none;
-        font-family: 'Cormorant Infant', serif;
-        text-decoration: none;
-        line-height: 50px;
-        letter-spacing: 1px;
-        font-weight: 600;
-        font-size: 50px;
-        color: #000;
-
-        &:hover {
-            color: #000000;
-            font-style: italic;
-            font-weight: 900px;
-        }
-    }
-
-    &__email-heading {
-        margin: 0;
-        font-size: 30px;
-    }
-
-    &__email-link {
-        color: #000;
-        font-size: 20px;
+        text-align: justify;
     }
 }
